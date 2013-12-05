@@ -3223,7 +3223,14 @@ int XCursesSetupX(int argc, char *argv[])
 #endif
 
     /* Wait for events */
+    {
+       XEvent event;
 
-    XtAppMainLoop(app_context);
+       for(;;) /* forever */
+       {
+          XtAppNextEvent(app_context, &event);
+          XtDispatchEvent(&event);
+       }
+    }    
     return OK;          /* won't get here */
 }
