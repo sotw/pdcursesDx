@@ -1,0 +1,16 @@
+*.o
+*.sho
+*.a
+*.so
+x11/firework
+x11/newdemo
+x11/ptest
+x11/rain
+x11/testcurs
+x11/tuidemo
+x11/worm
+x11/xmas
+config.log
+config.status
+doc/PDCurses.txt
+doc/manext
